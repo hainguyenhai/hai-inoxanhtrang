@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <!-- fonts chữ -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+    <!-- Css-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <title>InoxAnhTrang</title>
+  </head>
+  <body>
+    <!-- FB API -->
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0"
+    ></script>
+    <header id="header">
+      <div class="container">
+        <div class="top__header">
+          <p>
+            Inox Anh Trang - Cung cấp và phân phối tủ cơm công nghiệp, bếp công
+            nghiệp, bếp nhà hàng chính hãng, chất lượng cao, giá tốt, giao hàng
+            tận nơi, bảo hành lâu dài
+          </p>
+        </div>
+        <div class="header">
+          <div class="row">
+            <div class="nsh-col-9 d-flex">
+              <div class="logo">
+                <img src="./images/logo.png" alt="" />
+              </div>
+              <div class="hotline d-flex center">
+                <img
+                  src="./images/icon-phone.png"
+                  alt="icons"
+                  class="icon-phone"
+                />
+                <p>
+                  Hà nội: <span>098.440.6789</span> - TP.HCM:
+                  <span>094.481.6789</span>
+                </p>
+              </div>
+            </div>
+            <div class="nsh-col-3 d-flex center">
+              <form action="">
+                <div class="input__group">
+                  <input type="text" placeholder="Nhập nội dung tìm kiếm" />
+                  <i class="icons fas fa-search"></i>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav id="menu">
+      <div class="container">
+        <ul class="menu d-flex">
+          <li class=""><a href="#">Tủ nấu cơm</a></li>
+          <li><a href="">Tủ nấu cơm gas</a></li>
+          <li>
+            <a href="#">Tủ nấu cơm điện</a>
+            <ul class="sub__menu">
+              <li><a href="#">Tủ nấu cơm gas</a></li>
+              <li><a href="#">Tủ nấu cơm điện</a></li>
+              <li>
+                <a href="#">Tủ hấp cơm</a>
+                <ul class="sub__menu__child">
+                  <li><a href="#">Tủ nấu cơm gas</a></li>
+                  <li><a href="#">Tủ nấu cơm điện</a></li>
+                  <li><a href="#">Tủ hấp cơm</a></li>
+                  <li><a href="#">Linh kiện nấu cơm</a></li>
+                  <li><a href="#">Liên hệ</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Linh kiện nấu cơm</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Tủ hấp cơm</a></li>
+          <li><a href="#">Linh kiện nấu cơm</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main">
+      <div class="container">
+        <ul class="breadcum d-flex">
+          <li><a href="./">Trang Chủ</a></li>
+          <li><a href="">Tủ Nấu Cơm Gas</a></li>
+          <li><a href="">Đặt Hàng</a></li>
+        </ul>
+        <div class="row checkout">
+          <div class="nsh-col-6">
+            <form action="" class="form__checkout">
+              <div class="input__group">
+                <h2 class="title__form">Thông Tin Khách Hàng</h2>
+              </div>
+              <div class="input__group">
+                <input type="text" placeholder="Họ và Tên" />
+                <i class="icons fas fa-user"></i>
+              </div>
+              <div class="input__group">
+                <input type="text" placeholder="Số Điện Thoại" />
+                <i class="icons fas fa-phone"></i>
+              </div>
+              <div class="input__group">
+                <input type="email" placeholder="Email" />
+                <i class="icons fas fa-envelope"></i>
+              </div>
+              <div class="input__group">
+                <p>
+                  Nếu bạn đã có tài khoản trên <a href="/">inoxanhtrang.vn</a>,
+                  vui lòng đăng nhập.
+                </p>
+              </div>
+            </form>
+            <form action="" class="form__addr">
+              <div class="input__group">
+                <h2 class="title__form">Địa Chỉ Giao Hàng</h2>
+              </div>
+              <div class="input__group">
+                <input type="text" placeholder="Họ và tên người nhận" />
+                <i class="icons fas fa-user"></i>
+              </div>
+              <div class="input__group">
+                <input type="text" placeholder="Số điện thoại người nhận" />
+                <i class="icons fas fa-phone"></i>
+              </div>
+              <div class="input__group">
+                <input
+                  type="text"
+                  placeholder="Địa chỉ giao hàng (Vui lòng nhập chính xác)"
+                />
+                <i class="icons fas fa-envelope"></i>
+              </div>
+              <div class="input__group">
+                <textarea name="" id="" placeholder="Lời Nhắn"></textarea>
+              </div>
+            </form>
+            <div class="btn__group">
+              <button type="submit" class="btn btn__order">Đặt Hàng</button>
+              <button type="submit" class="btn btn__reset">Hủy</button>
+              <a href="./listproduct.html" class="backto__product"
+                ><i class="fas fa-share"></i><span>Tiếp Tục Mua Hàng</span>
+              </a>
+            </div>
+          </div>
+          <div class="nsh-col-5">
+            <div class="cart">
+              <div class="cart__row">
+                <strong>Giỏ Hàng:</strong>
+              </div>
+              <div class="cart__row">
+                <div class="cart__product">
+                  <div class="wrapper__image">
+                    <a href="#" class="image"
+                      ><img src="./images/tủ 1.jpg" alt="product" /><span
+                        >01</span
+                      ></a
+                    >
+                  </div>
+                  <h1 class="title">
+                    Tủ hấp cơm công nghiệp 100kg cho bếp công nghiệp
+                  </h1>
+                  <p class="price">
+                    10.000.000 Đồng
+                  </p>
+                </div>
+                <div class="cart__product">
+                  <div class="wrapper__image">
+                    <a href="#" class="image"
+                      ><img src="./images/tủ 1.jpg" alt="product" /><span
+                        >01</span
+                      ></a
+                    >
+                  </div>
+                  <h1 class="title">
+                    Tủ hấp cơm công nghiệp 100kg cho bếp công nghiệp
+                  </h1>
+                  <p class="price">
+                    10.000.000 Đồng
+                  </p>
+                </div>
+              </div>
+              <div class="cart__row">
+                <div class="cart__row-left">
+                  <p>V.A.T</p>
+                  <p>99k</p>
+                </div>
+                <div class="cart__row-right">
+                  <p>Phí Vận Chuyển</p>
+                  <p>Miễn Phí</p>
+                </div>
+              </div>
+              <div class="cart__row">
+                <div class="cart__row-left">Tổng Chi Phí :</div>
+                <div class="cart__row-right total__price">20.000.000 Đ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row">
+            <div class="nsh-col-3">
+              <div class="widgets widget__about">
+                <h3 class="widget__title">Doanh nghiệp</h3>
+                <div class="widget__content">
+                  <p>
+                    Anhtrang Production and investment trading joint stock
+                    company
+                  </p>
+                  <p>
+                    Mã số doanh nghiệp: 0107094755 Giấy phép ĐKKD số: 0107094755
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="nsh-col-3">
+              <div class="widgets widget__category">
+                <h3 class="widget__title">Thiết bị điện lạnh</h3>
+                <div class="widget__content">
+                  <ul>
+                    <li><a href="">Tủ đông công nghiệp</a></li>
+                    <li><a href="">Tủ đông công nghiệp</a></li>
+                    <li><a href="">Tủ đông công nghiệp</a></li>
+                    <li><a href="">Tủ đông công nghiệp</a></li>
+                    <li><a href="">Tủ đông công nghiệp</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="nsh-col-3">
+              <div class="widgets widget__contact">
+                <h3 class="widget__title">Văn Phòng</h3>
+                <div class="widget__content">
+                  <ul>
+                    <li>
+                      <i class="icons fas fa-envelope"></i
+                      ><span
+                        >Số 5, Ngõ 53, Đường Phú Diễn, Bắc Từ Liêm, Hà Nội</span
+                      >
+                    </li>
+                    <li>
+                      <i class="icons fas fa-envelope"></i
+                      ><span>Hotline: 0962 150 326</span>
+                    </li>
+                    <li>
+                      <i class="icons fas fa-envelope"></i
+                      ><span>Email: anhtrang@inoxanhtrang.vn</span>
+                    </li>
+                    <li>
+                      <i class="icons fas fa-envelope"></i
+                      ><span>Website: inoxanhtrang.vn</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="nsh-col-3">
+              <div class="widgets widget__contact">
+                <h3 class="widget__title">Nhà Máy</h3>
+                <div class="widget__content">
+                  <ul>
+                    <li>
+                      <i class="icons fas fa-envelope"></i
+                      ><span
+                        >Số 330, Đường K2, Phường Cầu Diễn, Nam Từ Liêm, Hà
+                        Nội.</span
+                      >
+                    </li>
+                    <li>
+                      <i class="icons fas fa-envelope"></i
+                      ><span>Tel: (04).6683.5419</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <p class="footer__bottom-top">
+            © Copyright 2016 inoxanhtrang.vn - Nhà cung cấp thiết bị bếp công
+            nghiệp hàng đầu tại Việt Nam
+          </p>
+          <div class="hot__line d-flex center">
+            <i class="icons fas fa-phone"></i>
+            <p>0123 688 3636</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

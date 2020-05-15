@@ -1,0 +1,131 @@
+@media only screen and (max-width: 1024px) {
+  #header .nsh-col-9,
+  #header .nsh-col-3 {
+    width: 100%;
+  }
+  #main .nsh-col-9,
+  #main .nsh-col-3 {
+    width: 100%;
+  }
+  .list__product .nsh-col-3-pd {
+    width: 50%;
+  }
+  .list__product .nsh-col-3-pd:not(:nth-child(-n + 2)) {
+    margin-top: 30px;
+  }
+  #footer .nsh-col-3 {
+    width: 50%;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  form {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #sidebar {
+    padding-top: 15px;
+  }
+  #header {
+    padding-bottom: 20px;
+  }
+  #header .input__group {
+    margin-top: 10px;
+  }
+  #footer .hot__line {
+    position: relative;
+    width: 100%;
+    height: 50px;
+  }
+  #footer .footer__top {
+    padding: 0 15px;
+  }
+  #footer .footer__bottom .container {
+    padding: 0;
+  }
+  #footer .footer__bottom {
+    text-align: center;
+  }
+  #header .logo {
+    display: none;
+  }
+  #header .hotline img {
+    display: none;
+  }
+  #header .hotline {
+    margin: 10px auto 0 auto;
+  }
+  .btn__collapse,
+  .nav__bg {
+    display: inline-block;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 45px;
+    right: 10px;
+    border-radius: 50%;
+    background-color: #eee;
+    color: #cb672e;
+    line-height: 2;
+    text-align: center;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .nav__bg {
+    background-color: #ccc;
+    z-index: 900;
+    transition: all 0.3s ease;
+  }
+  #menu .menu {
+    position: fixed;
+    left: 0;
+    top: 100px;
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    z-index: 950;
+    transition: all 0.3s ease;
+    background-color: #eee;
+    border-bottom: none;
+    transform: translateX(-100%);
+  }
+  .nav__bg-scale {
+    transform: scale(100);
+  }
+  #menu .menu-tl {
+    transform: translateX(0);
+  }
+  .product__image {
+    height: 350px;
+  }
+  .close {
+    display: none;
+  }
+  .input__collapse:checked + .nav__bg {
+    transform: scale(35);
+  }
+  .input__collapse:checked + .menu {
+    transform: translateX(100%);
+    display: block;
+  }
+  .slider {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .list__product .nsh-col-3-pd {
+    width: 100%;
+  }
+  .product .product__image {
+    min-height: 400px;
+    max-width: 100%;
+  }
+  .product .product__image img {
+    position: inherit;
+  }
+  .list__product .nsh-col-3-pd {
+    margin-top: 30px;
+  }
+}
